@@ -145,7 +145,8 @@ public class GoServerCodegen extends DefaultCodegen implements CodegenConfig {
         supportingFiles.add(new SupportingFile("main.mustache", "", "main.go"));
         supportingFiles.add(new SupportingFile("routers.mustache", apiPath, "routers.go"));
         supportingFiles.add(new SupportingFile("logger.mustache", apiPath, "logger.go")); 
-        supportingFiles.add(new SupportingFile("app.mustache", apiPath, "app.yaml"));        
+        supportingFiles.add(new SupportingFile("app.mustache", apiPath, "app.yaml"));
+        supportingFiles.add(new SupportingFile(".travis.yml", "", ".travis.yml"));
         writeOptional(outputFolder, new SupportingFile("README.mustache", apiPath, "README.md"));
     }
 
